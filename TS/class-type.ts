@@ -1,4 +1,4 @@
-class Person{
+class Person2{
   name :string;
 
 
@@ -11,8 +11,8 @@ class Person{
   }
 }
 
-let human1 = new Person('kim');
-let human2 = new Person('lee');
+let human1 = new Person2('kim');
+let human2 = new Person2('lee');
 
 class Car{
   modelName :string;

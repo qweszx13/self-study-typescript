@@ -22,14 +22,14 @@ function showName(name) {
 showName();
 showName("bob");
 function lengthCounter(input) {
-    var result;
+    let result;
     result = input.toString().length;
     return result;
 }
 lengthCounter(102);
 lengthCounter("20240428");
 function marryPossiblelity(monthlyIncome, haveHouse, humanityGrade) {
-    var totalScore;
+    let totalScore;
     totalScore += monthlyIncome / 1000;
     totalScore += haveHouse ? 500 : 0;
     totalScore += humanityGrade === 'top' ? 100 : 0; //->もっと厳しいタイプ指定ができますLiteral type

@@ -1,5 +1,5 @@
 function myNarrowing(x) {
-    var array = [];
+    let array = [];
     if (typeof x === 'number') { //以外にも in, instanceOfみたいに現在変数変数のタイプ変数のタイプがなんなのかを特定できればOK
         array[0] = x;
         console.log(array);
@@ -9,7 +9,7 @@ function myNarrowing(x) {
     }
 }
 function myAssertion(x) {
-    var array = [];
+    let array = [];
     array[0] = x;
     //簡単だからAssertion使うとダメです。
     //いつ使うのか？
@@ -26,8 +26,8 @@ myNarrowing('123');
 myAssertion(123);
 myAssertion('123'); //Error が出てこないので気をつけましょう。
 function numberArrayCleaning(input) {
-    var result = [];
-    input.forEach(function (b) {
+    let result = [];
+    input.forEach((b) => {
         if (typeof b === 'string') {
             result.push(parseInt(b));
         }
@@ -38,9 +38,9 @@ function numberArrayCleaning(input) {
     return result;
 }
 console.log(numberArrayCleaning([123, '24', '55']));
-var johnTeacher = { subject: 'math' };
-var bobTeacher = { subject: ['science', 'english'] };
-var eimiTeacher = { subject: ['science', 'art', 'japanese'] };
+let johnTeacher = { subject: 'math' };
+let bobTeacher = { subject: ['science', 'english'] };
+let eimiTeacher = { subject: ['science', 'art', 'japanese'] };
 function returnSubject(input) {
     if (Array.isArray(input.subject)) {
         return input.subject[input.subject.length - 1];

@@ -1,6 +1,6 @@
-var literalName;
+let literalName;
 //literalName = 456; 123のみ入れます。
-var myInformation;
+let myInformation;
 myInformation = 'rightStart';
 //いつ使うのか？１。変数をもっと厳しく管理するとき、２。自動完成機能が使えます。
 function myFunctionLiteral(i) {
@@ -15,7 +15,7 @@ function rsp(userInput) {
 rsp('rock');
 rsp('sissor');
 rsp('paper');
-var objectError = {
+let objectError = {
     name: 'kim' // objectError.name => typeof string
 };
 function myFunctionError(name) {
@@ -23,7 +23,7 @@ function myFunctionError(name) {
 }
 //myFunctionError(objectError.name);//だからこのobjectError.nameは値が'kim'でありタイプはstringなので入れないのです。
 //でわ、どうすればいいのか？
-var objectFix = {
+let objectFix = {
     name: 'kim'
 };
 //object value の値をそのままTypeで指定してくれます。 objectFix.name => typeof 'kim'

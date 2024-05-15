@@ -1,35 +1,35 @@
 //function aliasFunction :FunctionType(){}このようにはできません、先に作ったTypeを関数に指定したい場合、関数表現式を使いましょう
-var aliasFunction = function (input) {
+let aliasFunction = function (input) {
     return parseInt(input);
 };
-var plusOne = function (input) {
+let plusOne = function (input) {
     return parseInt(input);
 };
-var changeName = function (input) {
+let changeName = function (input) {
     this.name = input;
 };
-var signupInformation = {
+let signupInformation = {
     name: 'kim',
-    plusOne: plusOne,
-    changeName: changeName
+    plusOne,
+    changeName
 };
 signupInformation.plusOne('123');
 signupInformation.changeName('john');
 console.log(signupInformation.name);
-var signupInformation2 = {
+let signupInformation2 = {
     name: 'kim',
     age: 24,
-    plusOne: function (input) {
+    plusOne(input) {
         return parseInt(input);
     },
-    changeName: function (input) {
+    changeName(input) {
         this.name = input;
     }
 };
 signupInformation2.changeName('john');
 console.log(signupInformation2.name);
-var cutZero = function (input) {
-    var result = '';
+let cutZero = function (input) {
+    let result = '';
     if (input.charAt(0) === '0') {
         result = input.substring(1);
     }
@@ -38,8 +38,8 @@ var cutZero = function (input) {
     }
     return result;
 };
-var removeDash = function (input) {
-    var result = parseInt(input.replace(/-/g, ''));
+let removeDash = function (input) {
+    let result = parseInt(input.replace(/-/g, ''));
     return result;
 };
 console.log(cutZero('10123424'));

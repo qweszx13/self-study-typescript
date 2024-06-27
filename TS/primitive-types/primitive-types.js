@@ -1,19 +1,19 @@
-var myName = 'kim';
-var myAge = 50;
-var married = true;
-var empty = null;
-var unde = undefined;
-var signedMember = ['kim', 'park'];
-var signedMember2 = {
+let myName = 'kim';
+let myAge = 50;
+let married = true;
+let empty = null;
+let unde = undefined;
+let signedMember = ['kim', 'park'];
+let signedMember2 = {
     member1: 'kim',
     member2: 'park',
 };
-var myInfo = {
+let myInfo = {
     name: 'john',
     age: 25,
     address: 'korea',
 };
-var project = {
+let project = {
     member: ['kim', 'park'],
     days: 30,
     started: true,

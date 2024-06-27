@@ -12,7 +12,7 @@ littleBitSafe = 123;
 littleBitSafe = {};
 
 //let test :string = littleBitSafe; Error
-let test :string = anyName; //Warning noError
+let test10 :string = anyName; //Warning noError
 
 //littleBitSafe - 1; Error
 anyName - 1 //Warning noError

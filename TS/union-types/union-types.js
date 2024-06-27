@@ -9,7 +9,7 @@ var littleBitSafe;
 littleBitSafe = 123;
 littleBitSafe = {};
 //let test :string = littleBitSafe; Error
-var test = anyName; //Warning noError
+var test10 = anyName; //Warning noError
 //littleBitSafe - 1; Error
 anyName - 1; //Warning noError
 var age;
